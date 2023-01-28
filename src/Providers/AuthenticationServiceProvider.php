@@ -30,7 +30,7 @@ class AuthenticationServiceProvider extends ServiceProvider
     public function boot()
     {
 
-        $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
+        $this->loadMigrationsFrom('Creatify/Authentication/database/migrations');
         $this->publishes([
             __DIR__.'/../Database/Migrations' => base_path('Creatify/Authentication/database/migrations'),
         ]);
